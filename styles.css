@@ -1,0 +1,293 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px;
+}
+
+.NavBar .Logo img {
+    height: 50px;
+}
+
+.NavBar li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.NavBar li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.NavBar li a:hover {
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+
+.NavBar button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.NavBar button:hover {
+    background-color: #e64a19;
+}
+
+
+.Pi_Button {
+    text-align: center;
+    padding: 5px;
+    background-color: #fffbfb;
+}
+
+.Pi_Button img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.Pi_Button h3, .Pi_Button h2 {
+    margin-top: 20px;
+}
+
+.Pi_Button button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.Pi_Button button:hover {
+    background-color: #555;
+}
+
+
+.Form_Container {
+    background-color: white;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Form_Container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.Input-box input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 4px;
+}
+
+.Input-box label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #333;
+    background-color: white;
+    padding: 0 5px;
+}
+
+.Input-box span {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.Remember {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.Remember label {
+    font-size: 14px;
+}
+
+.Remember a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+}
+
+.Remember a:hover {
+    text-decoration: underline;
+}
+
+
+a.btn {
+    display: block;
+    background-color: #ff5722;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+a.btn:hover {
+    background-color: #e64a19;
+}
+
+.Register {
+    text-align: center;
+    font-size: 14px;
+}
+
+.Register a {
+    color: #ff5722;
+    text-decoration: none;
+}
+
+.Register a:hover {
+    text-decoration: underline;
+}
+
+
+.LOGIN.Successful {
+    text-align: center;
+    padding: 50px;
+    background-color: #e0ffe0;
+    color: #333;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+.LOGIN.Successful p {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.LOGIN.Successful button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.LOGIN.Successful button:hover {
+    background-color: #66BB6A;
+}
+
+
+.Intro {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.Intro h1 {
+    margin-bottom: 20px;
+}
+
+.Intro p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.Footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.Footer_Item, .Footer_Links {
+    margin-bottom: 20px;
+}
+
+.Footer h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.Footer p, .Footer a {
+    font-size: 14px;
+}
+
+.Footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.Footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .NavBar li a {
+        padding: 10px 10px;
+    }
+
+    .Pi_Button h3 {
+        font-size: 28px;
+    }
+
+    .Pi_Button h2 {
+        font-size: 24px;
+    }
+
+    .Intro h1 {
+        font-size: 32px;
+    }
+
+    .Why h2, .Service h1 {
+        font-size: 32px;
+    }
+
+    .Service img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
